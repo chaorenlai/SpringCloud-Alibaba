@@ -46,6 +46,8 @@ public class DemoConsumerApplication {
         public String hello(String name) {
             // 获得服务 `demo-provider` 的一个实例
             ServiceInstance instance;
+
+
             if (true) {
                 // 获取服务 `demo-provider` 对应的实例列表
                 List<ServiceInstance> instances = discoveryClient.getInstances("nacos-provider-demo2");
